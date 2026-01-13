@@ -1,4 +1,4 @@
-# bank-demo
+#bank-demo
 
 Dockerized multi-service demo app for DevOps practice:
 
@@ -19,7 +19,7 @@ Check:
 
 ```bash
 docker --version
-docker compose version
+docker compose version```
 
 Project structure
 
