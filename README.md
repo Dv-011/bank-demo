@@ -16,10 +16,8 @@ Check:
 docker --version
 docker compose version
 Project structure
-markdown
-
+```text
 bank-demo/
-
 ├── docker-compose.yml
 ├── .env.example
 ├── .gitignore
@@ -31,6 +29,8 @@ bank-demo/
     ├── Dockerfile
     ├── requirements.txt
     └── app.py
+
+
 Configuration (.env)
 Create local .env from example:
 
