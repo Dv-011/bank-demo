@@ -19,7 +19,7 @@ Check:
 
 ```bash
 docker --version
-docker compose version```
+docker compose version
 
 Project structure
 
