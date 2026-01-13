@@ -21,7 +21,6 @@ markdown
 bank-demo/
 
 ├── docker-compose.yml
-
 ├── .env.example
 ├── .gitignore
 ├── web/
