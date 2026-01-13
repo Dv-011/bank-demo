@@ -19,6 +19,7 @@ Project structure
 markdown
 
 bank-demo/
+
 ├── docker-compose.yml
 
 ├── .env.example
