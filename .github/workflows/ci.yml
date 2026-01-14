@@ -2,9 +2,9 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   test:
@@ -19,10 +19,10 @@ jobs:
 
       - name: Start application
         run: |
-	  POSTGRES_DB=bankdb POSTGRES_PASSWORD=bankpass docker compose up -d
+          POSTGRES_DB=bankdb POSTGRES_PASSWORD=bankpass docker compose up -d
 
       - name: Wait for services
-        run: sleep 20
+        run: sleep 30
 
       - name: Check backend health
         run: curl -f http://localhost:8000/health
@@ -31,4 +31,5 @@ jobs:
         run: curl -f http://localhost:8080
 
       - name: Stop application
+        if: always()
         run: docker compose down
