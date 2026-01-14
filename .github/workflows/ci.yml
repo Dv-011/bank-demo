@@ -19,8 +19,8 @@ jobs:
 
       - name: Start application
         run: |
-          POSTGRES_DB=bankdb POSTGRES_PASSWORD=bankpass docker compose up -d
-
+          POSTGRES_DB=${{ secrets.POSTGRES_DB }} POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} docker compose up -d
+	
       - name: Wait for services
         run: sleep 30
 
